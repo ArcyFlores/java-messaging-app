@@ -1,0 +1,17 @@
+The TestingHomeworkImpl should be rejected since based on the API, it
+doesn't correctly cover all cases for potential outputs
+and doesn't account for accurately outputting the
+correct answer.
+
+For example, the sqr() method is meant to output only
+values of type int but given two large significant
+integer values, an int as an output would not accurately
+reflect the true values since the int would not contain
+enough memory to hold said values.
+
+Furthermore, other functions, like sqrt() do not have exceptions
+to handle negative values or any other abstract data types to handle
+imaginary numbers, according to the API.
+
+
+

@@ -1,0 +1,18 @@
+The SimpleGuiTester shows testing an allRed
+method in SimpleHand.java --- in the this
+version there is no interface/inheritance
+hierarchy. See below for generalizing the allRed
+method into an interface that can be 
+
+The StatisticalCardTestMain runs 10000
+(changeable) hands over several different
+boolean tests like isFlush, hasPair, etc.
+
+The RealGuiTester shows a GUI view of one
+run of any number of isFlush, hasPair, hand
+testing classes, see the main method for
+it in CardTestMain.java --- the main in
+RealGuiTester is meant just to see if it works
+with an AnyThingGoes hand-test class.
+
+

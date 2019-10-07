@@ -1,0 +1,7 @@
+
+fsquid:UselessImportCheck"6Remove this unused import 'problem2.decks.EuchreImpl'.(Â´°ôıÿÿÿÿ8ûñø‰æ,
+`squid:UselessImportCheck"5Remove this unused import 'problem2.decks.VegasImpl'.(Âãúñ8Ëê‚Šæ,
+csquid:UselessImportCheck	"8Remove this unused import 'problem2.decks.PinochleImpl'.(¶Çé8Ü®ù‰æ,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ù›’Êıÿÿÿÿ
+csquid:UselessImportCheck
+"8Remove this unused import 'problem2.decks.StandardImpl'.(‡š¥×8…è÷‰æ,

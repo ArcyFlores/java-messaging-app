@@ -1,0 +1,203 @@
+Arcylizet Iniguez Flores 
+
+Northeastern University
+CS5500 - Managing Software Development
+Fall 2018 - Silicone Valley Campus
+Assignment 1 
+
+
+STEP 1: 
+QUESTION: What are your git config's?
+$ git config --list
+user.name=Arcy Flores
+user.email=aflores@ccs.neu.edu
+core.editor=vim
+
+
+STEP 2: 
+QUESTION: What files or directories are in the .git directory?
+Grading
+	test.txt
+Homework 1
+	test.txt
+Homework 2
+	test.txt
+Homework 3
+	test.txt
+Homework 4
+	test.txt
+Homework 5
+	test.txt
+README.md
+
+
+STEP 3: 
+QUESTION: Using markdown, how would one express a link to the course web page:
+ (https://course.ccs.neu.edu/cs5500)?
+ http://github.com - automatic!
+[GitHub] (https://course.ccs.neu.edu/cs5500)
+
+
+STEP 4: 
+QUESTION: What rules are in your .gitignore?
+# Compiled class file
+*.class
+# Log file
+*.log
+# Mac and IntelliJ files
+.DS_Store
+.idea
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+STEP 5: 
+Branch created, pushed to Github
+
+
+STEP 6: 
+QUESTION: What are all the commits you've made on the feature-1 branch?
+$ git log
+commit 82428b7a405153216a8ef820791f3e292e8ee59d (HEAD -> feature-1)
+Author: Arcy Flores <aflores@ccs.neu.edu>
+Date:   Mon Sep 10 22:22:18 2018 -0700
+
+    step 6 complete - satisfying requirement one
+
+What files and sub-directories are listed in your Homework 1 directory on the feature-1 branch? 
+$ ls -la Homework\ 1/
+total 8
+drwxr-xr-x   7 aflores  staff   224B Sep 10 22:29 ./
+drwxr-xr-x  12 aflores  staff   384B Sep  9 18:46 ../
+drwxr-xr-x   6 aflores  staff   192B Sep 10 22:24 .idea/
+drwxr-xr-x   4 aflores  staff   128B Sep 10 14:47 out/
+drwxr-xr-x   4 aflores  staff   128B Sep 10 22:29 src/
+drwxr-xr-x   3 aflores  staff    96B Sep 10 22:29 test/
+-rw-r--r--   1 aflores  staff     4B Sep  9 18:40 test.txt
+
+What files and sub-directories are listed in your Homework 1 directory on the master branch. 
+$ ls -la Homework\ 1/
+total 8
+drwxr-xr-x   5 aflores  staff   160B Sep 10 22:27 ./
+drwxr-xr-x  12 aflores  staff   384B Sep  9 18:46 ../
+drwxr-xr-x   6 aflores  staff   192B Sep 10 22:24 .idea/
+drwxr-xr-x   4 aflores  staff   128B Sep 10 14:47 out/
+-rw-r--r--   1 aflores  staff     4B Sep  9 18:40 test.txt
+
+
+STEP 7: 
+feature-1 branch merged with master 
+
+
+STEP 8:
+feature-2 branch created
+$ git branch
+  feature-1
+* feature-2
+  master
+
+STEP 9: 
+feature-3 branch created
+$ git branch feature-3
+  feature-1
+  feature-2
+  feature-3
+* master
+
+
+STEP 10: 
+QUESTION: What are all the commits you've made on the feature-2 branch?
+$ git log
+commit de4948fa5272594d06fd6112646307a9fee2baf0 (HEAD -> feature-2)
+Author: Arcy Flores <aflores@ccs.neu.edu>
+Date:   Wed Sep 12 21:31:45 2018 -0700
+
+    satisfying requirement change two
+
+
+STEP 11: 
+$ git status
+On branch feature-3
+nothing to commit, working tree clean
+$ git log
+commit b5d62ce0cda7830347f329b66d79188a203f9677 (HEAD -> feature-3)
+Author: Arcy Flores <aflores@ccs.neu.edu>
+Date:   Wed Sep 12 21:37:53 2018 -0700
+
+    Step 11 - satisfying requirement change three
+
+
+STEP 12:
+$ git merge feature-2
+Updating 82428b7..de4948f
+Fast-forward
+ Homework 1/src/OutputNumbers.java      |  1 +
+ Homework 1/test/OutputNumbersTest.java | 22 +++++++++-------------
+ 2 files changed, 10 insertions(+), 13 deletions(-)
+
+
+STEP 13: 
+$ git merge feature-3
+Auto-merging Homework 1/test/OutputNumbersTest.java
+CONFLICT (content): Merge conflict in Homework 1/test/OutputNumbersTest.java
+Auto-merging Homework 1/src/OutputNumbers.java
+CONFLICT (content): Merge conflict in Homework 1/src/OutputNumbers.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+QUESTION: What are the differences between master and the other three branches? 
+Hint: use git diff.
+$ git diff
+diff --cc Homework 1/src/OutputNumbers.java
+index e958a60,81f623b..0000000
+--- a/Homework 1/src/OutputNumbers.java
++++ b/Homework 1/src/OutputNumbers.java
+diff --cc Homework 1/test/OutputNumbersTest.java
+index 2b33c06,0cc73cd..0000000
+--- a/Homework 1/test/OutputNumbersTest.java
++++ b/Homework 1/test/OutputNumbersTest.java
+@@@ -17,19 -17,15 +17,15 @@@ public class OutputNumbersTest 
+    @Test
+    public void outputNum() {
+:
+
+
+STEP 14:
+QUESTION: What are the differences now between master and the other three branches? 
+Hint: use git diff.
+$ git diff master feature-3
+diff --git a/Homework 1/src/OutputNumbers.java b/Homework 1/src/OutputNumbers.java
+index e958a60..81f623b 100644
+--- a/Homework 1/src/OutputNumbers.java 
++++ b/Homework 1/src/OutputNumbers.java 
+@@ -24,7 +24,7 @@ public class OutputNumbers implements NumberSequence {
+     }
+     while(a < b - 1){
+       a = a + 1;
+-      if(a % 2 == 1)
++      if(a % 2 == 0)
+       output.add(a);
+     }
+     return output;
+diff --git a/Homework 1/test/OutputNumbersTest.java b/Homework 1/test/OutputNumbersTest.java
+index 2b33c06..0cc73cd 100644
+--- a/Homework 1/test/OutputNumbersTest.java    
++++ b/Homework 1/test/OutputNumbersTest.java    
+@@ -17,19 +17,15 @@ public class OutputNumbersTest {
+   @Test
+   public void outputNum() {
+     String result1 = Arrays.toString(a.outputNum(0, 5).toArray());
+-    String result2 = Arrays.toString(a.outputNum(-1, 20).toArray());
++    String result2 = Arrays.toString(a.outputNum(-10, 5).toArray());
+
+STEP 15: 
+
+
+STEP 16:

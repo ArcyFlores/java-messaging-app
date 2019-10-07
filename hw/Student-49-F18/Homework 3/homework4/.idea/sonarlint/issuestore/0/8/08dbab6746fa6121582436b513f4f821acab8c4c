@@ -1,0 +1,25 @@
+
+W
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÓÇóú8åĞæœë,
+~squid:S00115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Œ‘ô¡úÿÿÿÿ8¼Àû¥ê,
+~squid:S00115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Œ‘ô¡úÿÿÿÿ8¼Àû¥ê,
+Tsquid:S1854‡"5Remove this useless assignment to local variable "a".( µêÇ8á¤æ›ë,
+lsquid:S2259ˆ"MA "NullPointerException" could be thrown; "lookupEnumName()" can return null.(‚‘µş8­Ò¢œë,
+W
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(¯Ìó8õÏ¥œë,
+~squid:S00115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Œ‘ô¡úÿÿÿÿ8¼Àû¥ê,
+wsquid:S3973T"YUse curly braces or indentation to denote the code conditionally executed by this "else".(ÔÍØ8¼Àû¥ê,
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(Åüâúÿÿÿÿ8šÅÀë,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(É¯¸i8™Áğœë,
+~squid:S00115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Œ‘ô¡úÿÿÿÿ8¼Àû¥ê,
+W
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(‚‘µş8ìŞ‡œë,
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºÑ×îùÿÿÿÿ8¼Àû¥ê,
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä›¦Ÿ8¼Àû¥ê,
+\
+squid:S106†"9Replace this use of System.out or System.err by a logger.(¤Ú¶ûÿÿÿÿ8‰ºóöê,
+V
+squid:S106‰"9Replace this use of System.out or System.err by a logger.(É¯¸i8¶İ©œë,
+Esquid:S1481‡"&Remove this unused "a" local variable.( µêÇ8á¤æ›ë,

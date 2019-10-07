@@ -1,0 +1,4 @@
+
+¡%squid:RedundantThrowsDeclarationCheck"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(Öìøşÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ğƒì

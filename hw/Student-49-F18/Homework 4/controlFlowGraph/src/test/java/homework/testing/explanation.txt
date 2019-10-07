@@ -1,0 +1,11 @@
+Based on my test suite the code should be accepted,
+since I am directly testing expected functionality,
+according to the documentation and given examples.
+
+However, the code does not count spaces after a string,
+ex: "  a,  b,  c  ", although this string contains 4 contiguous spaces,
+the example(String input) method only outputs 3 since it doesn't count the
+contiguous spaces after the c.
+
+Based on the documentation, it's unclear if this is the expected
+functionality, or if this is an overlooked error.

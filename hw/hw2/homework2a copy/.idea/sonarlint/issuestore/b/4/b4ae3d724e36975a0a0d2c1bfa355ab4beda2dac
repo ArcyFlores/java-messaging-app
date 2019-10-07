@@ -1,0 +1,7 @@
+
+Hsquid:S1068",Remove this unused "gameDeck" private field.(×Õ§û8¿º³ˆä,
+Msquid:S1068"1Remove this unused "numberOfHands" private field.(ÌÚ Ú8¿º³ˆä,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âÞÈ±8¿º³ˆä,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡’¸£úÿÿÿÿ8¿º³ˆä,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ôí¯ÿ8¿º³ˆä,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ôä¨«8¿º³ˆä,
